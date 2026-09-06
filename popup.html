@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+<title>Facebook Auto Photo Saver</title>
+</head>
+<body>
+  <div class="header">
+    <div class="title">Facebook Auto Saver</div>
+    <div class="subtitle">حدد عدد الصور وابدأ</div>
+  </div>
+
+  <div class="row">
+    <label for="count">عدد الصور</label>
+    <input id="count" type="number" min="1" max="500" value="10">
+  </div>
+
+  <div class="quick">
+    <button data-n="5">5</button>
+    <button data-n="10">10</button>
+    <button data-n="25">25</button>
+    <button data-n="50">50</button>
+  </div>
+
+  <label class="zip-row">
+    <input id="zipMode" type="checkbox">
+    <span>اجمع الصور في ملف ZIP واحد</span>
+  </label>
+
+  <div class="actions">
+    <button id="start" class="primary">ابدأ</button>
+    <button id="stop" class="danger" disabled>إيقاف</button>
+  </div>
+
+  <div class="progress">
+    <div class="bar"><div id="barFill" class="fill"></div></div>
+    <div id="status" class="status">جاهز</div>
+  </div>
+
+  <div class="footer">
+    <button id="reset" class="link">إعادة الترقيم إلى 1</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

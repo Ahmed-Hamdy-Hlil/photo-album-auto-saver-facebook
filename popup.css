@@ -1,0 +1,60 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 280px;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  background: #f7f8fa;
+  color: #1c1e21;
+  padding: 14px;
+}
+.header { margin-bottom: 12px; }
+.title { font-size: 15px; font-weight: 700; }
+.subtitle { font-size: 11px; color: #65676b; margin-top: 2px; }
+
+.row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.row label { font-size: 12px; font-weight: 600; }
+.row input {
+  width: 90px; padding: 6px 8px; font-size: 13px;
+  border: 1px solid #ccd0d5; border-radius: 6px; text-align: center;
+}
+.row input:focus { outline: none; border-color: #1877f2; }
+
+.quick { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-bottom: 10px; }
+.quick button {
+  padding: 6px 0; font-size: 12px; background: #fff; border: 1px solid #ccd0d5;
+  border-radius: 6px; cursor: pointer;
+}
+.quick button:hover { background: #e7f0ff; border-color: #1877f2; }
+
+.zip-row {
+  display: flex; align-items: center; gap: 7px;
+  margin-bottom: 10px; font-size: 12px; font-weight: 600; cursor: pointer;
+  user-select: none;
+}
+.zip-row input { width: 15px; height: 15px; accent-color: #1877f2; cursor: pointer; }
+
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 12px; }
+button.primary {
+  background: #1877f2; color: #fff; border: none; padding: 9px;
+  border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer;
+}
+button.primary:hover { background: #166fe5; }
+button.primary:disabled { background: #aac7eb; cursor: not-allowed; }
+button.danger {
+  background: #fff; color: #e41e3f; border: 1px solid #e41e3f; padding: 9px;
+  border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer;
+}
+button.danger:disabled { color: #d4a3a8; border-color: #e6b6bd; cursor: not-allowed; }
+
+.progress { margin-bottom: 8px; }
+.bar { height: 8px; background: #e4e6eb; border-radius: 4px; overflow: hidden; }
+.fill { height: 100%; width: 0%; background: linear-gradient(90deg, #1877f2, #42b72a); transition: width .25s; }
+.status { font-size: 11px; color: #65676b; margin-top: 6px; text-align: center; min-height: 14px; }
+
+.footer { text-align: center; }
+button.link {
+  background: none; border: none; color: #1877f2; font-size: 11px; cursor: pointer; text-decoration: underline;
+}
+
+.done { color: #42b72a; font-weight: 700; }
+.error { color: #e41e3f; font-weight: 700; }
